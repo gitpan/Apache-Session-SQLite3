@@ -1,5 +1,5 @@
 package Apache::Session::SQLite3;
-$Apache::Session::SQLite3::VERSION = '0.01';
+$Apache::Session::SQLite3::VERSION = '0.02';
 
 use strict;
 use base 'Apache::Session';
@@ -30,6 +30,11 @@ sub populate {
 
 Apache::Session::SQLite3 - Use DBD::SQLite 1.x for Apache::Session storage
 
+=head1 VERSION
+
+This document describes version 0.02 of Apache::Session::SQLite3, released 
+January 10, 2004.
+
 =head1 SYNOPSIS
 
     use Apache::Session::SQLite3;
@@ -59,7 +64,7 @@ Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2004 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
+Copyright 2004, 2005 by Autrijus Tang E<lt>autrijus@autrijus.orgE<gt>.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

@@ -1,5 +1,5 @@
 package Apache::Session::Store::SQLite3;
-$Apache::Session::Store::SQLite3::VERSION = '0.01';
+$Apache::Session::Store::SQLite3::VERSION = '0.02';
 
 use strict;
 use base 'Apache::Session::Store::DBI';
@@ -101,7 +101,10 @@ sub update {
     $self->{update_sth}->bind_param(2, time, SQL_INTEGER);
     $self->{update_sth}->bind_param(3, $session->{data}->{_session_id}, SQL_CHAR);
 
-    $self->{update_sth}->execute;
+    for (1..600) {
+	eval { $self->{update_sth}->execute; 1 } and last;
+	sleep 1;
+    }
     $self->{update_sth}->finish;
 }
 
