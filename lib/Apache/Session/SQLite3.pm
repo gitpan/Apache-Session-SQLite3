@@ -1,5 +1,5 @@
 package Apache::Session::SQLite3;
-$Apache::Session::SQLite3::VERSION = '0.02';
+$Apache::Session::SQLite3::VERSION = '0.03';
 
 use strict;
 use base 'Apache::Session';
@@ -32,8 +32,8 @@ Apache::Session::SQLite3 - Use DBD::SQLite 1.x for Apache::Session storage
 
 =head1 VERSION
 
-This document describes version 0.02 of Apache::Session::SQLite3, released 
-January 10, 2004.
+This document describes version 0.03 of Apache::Session::SQLite3, released 
+February 2, 2005.
 
 =head1 SYNOPSIS
 

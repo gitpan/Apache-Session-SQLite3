@@ -1,5 +1,5 @@
 name: Apache-Session-SQLite3
-version: 0.02
+version: 0.03
 abstract: Use DBD::SQLite 1.x for Apache::Session storage
 author: Autrijus Tang <autrijus@autrijus.org>
 license: perl
